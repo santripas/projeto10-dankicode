@@ -67,7 +67,7 @@ nav.mobile ul{
     left: 0;
     top: 0;
     width: 100%;
-    padding: 30px 0;
+    padding: 70px 0 30px 0;
     display: none;
     background: #31475e;
     text-align: center;
@@ -138,6 +138,7 @@ div.chamada-header input[type=submit]{
 
 section.descricao-danki{
     text-align: center;
+    padding: 30px 0;
 }
 
 section.descricao-danki p{
@@ -148,7 +149,78 @@ section.descricao-danki p{
     font-style: italic;
 }
 
+section.descricao-danki2{
+    padding: 50px 0;
+}
+
+section.descricao-danki2 > .container{
+    max-width: 960px;
+}
+
+.texto-descricao{
+    padding: 0 15px;
+    float: left;
+    width: 55%;
+}
+
+.texto-descricao h3{
+    color: #31475e;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.texto-descricao p{
+    margin-top: 15px;
+    color: #6a7c92;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+section.descricao-danki2 img{
+    width: 45%;
+    float: left;
+    max-width: 500px;
+}
+
+section.descricao-danki3{
+    padding: 30px 0;
+}
+
+section.descricao-danki3 > .container{
+    max-width: 960px;
+    background-image: url(../imagens/bg2.jpg);
+    background-size: cover;
+    min-height: 350px;
+    position: relative;
+}
+
+.box-depoimento{
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    width: 70%;
+    max-width: 506px;
+    background: white;
+    padding: 10px 30px;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+}
+
+.box-depoimento p{
+    font-size: 18px;
+    border-color: #31475e;
+    font-weight: lighter;
+}
+
 @media screen and (max-width:1024px) {
+    .box-depoimento{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        transform: translate(-50%,-50%);
+        width: 80%;
+    }
     nav.desktop{display: none;}
     nav.mobile{display: block;}
     div.chamada-header{
@@ -163,3 +235,15 @@ section.descricao-danki p{
         margin-bottom: 10px;
     }
 }
+
+@media screen and (max-width:768px){
+    .texto-descricao{width: 100%;}
+    section.descricao-danki2 img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+        margin-top: 10px;
+        max-width: 500px;
+    }
+} 
