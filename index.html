@@ -6,8 +6,10 @@
     <title>Agência de Marketing digital,agência,automação de marketing</title>
     <meta name="author" content="Danki Code">
     <meta name="keywords" content="marketing digital,agência,automação de marketing">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    
 </head>
 <body>
     <header>
@@ -22,6 +24,16 @@
                         <li class="btn-nav"><a href="">Quero um orçamento</a></li>
                     </ul>
                 </nav><!--desktop-->
+
+                <nav class="mobile">
+                    <h3><i class="fa fa-bars"></i></h3>
+                    <ul>
+                        <li><a href="">Sobre</a></li>
+                        <li><a href="">Serviços</a></li>
+                        <li><a href="">Contatos</a></li>
+                        <li class="btn-nav"><a href="">Quero um orçamento</a></li>
+                    </ul>
+                </nav><!--mobile-->
                 <div class="clear"></div><!--clear-->
             </div><!--menu-topo-->
             <div class="chamada-header">
@@ -34,5 +46,18 @@
             </div><!--chamada-header-->
         </div><!--container-->
     </header>
+
+    <section class="descricao-danki">
+        <div class="container">
+            <p>Com anos de experiência em desenvolvimento web e automação de marketing, a <b>DankiCode</b> traz soluções que ajudam o seu time a vender mais tanto em segmentos B2C quanto B2B</p>
+        </div><!--container-->
+    </section><!--descricao-header-->
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+        $('nav.mobile h3').click(function(){
+            $('nav.mobile').find('ul').slideToggle();
+        })
+    </script>
 </body>
 </html>
